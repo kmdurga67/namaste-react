@@ -1,5 +1,5 @@
 # Enhanching knowlegde of Basic React😍
-Namaste React
+Food Ordering Application🥪🥗🌯
 
 # Parcel
 - Dev Build
@@ -19,3 +19,22 @@ Namaste React
 - HTTPs
 - Tree Shaking - remove unused code
 - Different dev & prod bundles
+
+#Topic Covered
+- Cross-site scripting
+- Optimizing the code
+- Optional chaning
+- Reconcillation algorithm (finds out difference b/w old DOM to new DOM)
+- Architecture (Monolith & Microservices)
+- Hooks (useState & useEffect)
+- CORS policy
+- Routing (react-router-dom)
+- Client side routing
+- Functional & Class based Components
+- Life cycle hook of class based component
+- Single responsibility / custom hook
+- Code splitting/ lazy loading/ bundling/ dynamic loading
+- Higher order component
+- Controlled & uncontrolled components
+- Lifting state up
+- Props drilling (useContextAPI)

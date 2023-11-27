@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ResturantCard from "./ResturantCard";
-import { resObj } from "../../data";
+import ResturantCard, { withdeliveryTime } from "./ResturantCard";
+import { resObj } from "../Data/data";
 import "../index.css";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -13,20 +13,21 @@ const Body = () => {
 
   const onlineStatus = useOnlineStatus();
 
+  const ResturantCardTime = withdeliveryTime(ResturantCard);
+
   // useEffect(() =>{
   //   fetchData();
   // },[]);
 
   // const fetchData = async ()=> {
 
-  //   const data = await fetch("https://www.swiggy.com/api/seo/getListing?lat=25.3176452&lng=82.9739144")
-  // // "https://www.swiggy.com/dapi/restaurants/search/v3?lat=25.3176452&lng=82.9739144&str=North%20Indian&trackingId=a71f7424-3f6c-51b1-ecfd-d5b823a59827&submitAction=ENTER&queryUniqueId=e6317c49-6c33-5211-c3aa-167197082c98");
+  //   const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.3176452&lng=82.9739144&page-type=DESKTOP_WEB_LISTING")
 
   //   const json = await data.json();
 
   //   console.log(json);
 
-  // // setResturants(json.data.card[2].data.data.cards);
+  //   setResturants(json?.data?.cards)
   // }
 
   const filterResturants = () => {
@@ -50,7 +51,7 @@ const Body = () => {
 
   if (onlineStatus === false) {
     return (
-      <h1 style={{alignItems:"center", fontSize:'48px'}}>
+      <h1 style={{ alignItems: "center", fontSize: "48px" }}>
         Looks Like You Are Offline!! Please Check Your Internet Connection.
       </h1>
     );
@@ -84,8 +85,10 @@ const Body = () => {
             to={"/resturants/" + resturant.card.card.info.id}
             key={resturant.card.card.info.id}
             className="link"
-          >
-            <ResturantCard resData={resturant} />
+          >{
+            resturant.card.card.info.sla.deliveryTime < 30 ? <ResturantCardTime resData={resturant}/> : <ResturantCard resData={resturant}/>
+          }
+           
           </Link>
         ))}
       </div>
