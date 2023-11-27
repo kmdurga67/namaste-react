@@ -20,7 +20,7 @@ Food Ordering Application🥪🥗🌯
 - Tree Shaking - remove unused code
 - Different dev & prod bundles
 
-#Topic Covered
+# Topic Covered
 - Cross-site scripting
 - Optimizing the code
 - Optional chaning
