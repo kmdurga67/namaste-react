@@ -5,17 +5,17 @@ import { cards } from "../Data/resturants";
 const useResturantMenu = (resId) => {
   const [resInfo, setResInfo] = useState(null);
   useEffect(() => {
-    cards ? fetchRestaurants() : console.log("Error found");
-    //fetchRestaurants();
+    //cards ? fetchRestaurants() : console.log("Error found");
+    fetchRestaurants();
   }, []);
 
   const fetchRestaurants = async () => {
-    // const resturants = await fetch(MENU_URL + resId);
+     const resturants = await fetch(MENU_URL + resId);
 
-    // const json = await resturants.json();
-    // console.log(json);
-    // setResInfo(json.data);
-    setResInfo(cards);
+    const json = await resturants.json();
+    console.log(json);
+    setResInfo(json.data);
+    //setResInfo(cards);
   };
 
   return resInfo;
