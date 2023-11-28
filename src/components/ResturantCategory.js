@@ -1,5 +1,5 @@
 import "../index.css";
-import ItemList from "./ItemList";
+import ItemList from "./ItemList.js";
 
 const ResturantCategory = (props) => {
   const { data, toggle, setShowIndex } = props;

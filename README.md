@@ -38,3 +38,5 @@ Food Ordering Application🥪🥗🌯
 - Controlled & uncontrolled components
 - Lifting state up
 - Props drilling (useContextAPI)
+- Redux (Redux Js ToolKit) (@redux/toolkit, react-redux)
+- 

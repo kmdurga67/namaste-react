@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { cards } from "../Data/resturants.js";
+// import { cards } from "../Data/resturants.js";
 import Shimmer from "./Shimmer.js";
 import "../index.css";
-import { RESTURANT_IMAGE_URL } from "../utils/constants.js";
+// import { RESTURANT_IMAGE_URL } from "../utils/constants.js";
 import { useParams } from "react-router-dom";
 import useResturantMenu from "../utils/useResturantMenu.js";
 import ResturantCategory from "./ResturantCategory.js";
