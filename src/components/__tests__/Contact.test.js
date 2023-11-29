@@ -5,12 +5,12 @@ import "@testing-library/jest-dom";
 //unit testing
 //multiple test caeses inside where we can test the application of multiple components at a time or nesting the test cases
 describe("Contact us test cases", () => {
-  test("Should load contact us component", () => {   //we can use it also instead of test it's a alias of test
+  test("Should load contact us component", () => {   //we can use "it" also, instead of "test" it's a alias of "test"
     render(<Contact />); //rendered to the jsdom first
     const heading = screen.getByRole("heading"); //find out all the heading inside the component
 
     //assertion is likely to be expect
-    expect(heading).toBeInTheDocument(); //toBeInTheDocument - coming from @testing-library/jest-dom
+    expect(heading).toBeInTheDocument(); //toBeInTheDocument - coming from "@testing-library/jest-dom" library
   });
 
   test("Should load button inside Contact us component", () => {
@@ -19,7 +19,7 @@ describe("Contact us test cases", () => {
     expect(button).toBeInTheDocument();
   });
 
-  //for multipleitems of the component
+  //for multiple items of the component
   test("Should load 2 input boxes inside Contact us component", () => {
     render(<Contact />);
     //Querrying
