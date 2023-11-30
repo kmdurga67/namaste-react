@@ -1,0 +1,99 @@
+{
+  "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+  "info": {
+    "id": "423638",
+    "name": "The Moody Chef",
+    "cloudinaryImageId": "gp7ervpa1v3pdnhxibb4",
+    "locality": "Jawahar Nagar Colony",
+    "areaName": "Durgakund",
+    "costForTwo": "₹300 for two",
+    "cuisines": ["Chinese", "Beverages"],
+    "avgRating": 3.8,
+    "veg": true,
+    "feeDetails": {
+      "restaurantId": "423638",
+      "fees": [
+        {
+          "name": "BASE_TIME"
+        },
+        {
+          "name": "BASE_DISTANCE",
+          "fee": 5600
+        },
+        {
+          "name": "ANCILLARY_SURGE_FEE"
+        }
+      ],
+      "totalFee": 5600
+    },
+    "parentId": "211621",
+    "avgRatingString": "3.8",
+    "totalRatingsString": "50+",
+    "sla": {
+      "deliveryTime": 32,
+      "lastMileTravel": 5.6,
+      "serviceability": "SERVICEABLE",
+      "slaString": "32 mins",
+      "lastMileTravelString": "5.6 km",
+      "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+      "nextCloseTime": "2023-11-18 02:00:00",
+      "opened": true
+    },
+    "badges": {
+      "imageBadges": [
+        {
+          "imageId": "v1695133679/badges/Pure_Veg111.png",
+          "description": "pureveg"
+        }
+      ]
+    },
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+      "entityBadges": {
+        "textBased": {},
+        "imageBased": {
+          "badgeObject": [
+            {
+              "attributes": {
+                "description": "pureveg",
+                "imageId": "v1695133679/badges/Pure_Veg111.png"
+              }
+            }
+          ]
+        },
+        "textExtendedBadges": {}
+      }
+    },
+    "aggregatedDiscountInfoV3": {
+      "header": "40% OFF",
+      "subHeader": "UPTO ₹80"
+    },
+    "orderabilityCommunication": {
+      "title": {},
+      "subTitle": {},
+      "message": {},
+      "customIcon": {}
+    },
+    "differentiatedUi": {
+      "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+      "differentiatedUiMediaDetails": {
+        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+        "lottie": {},
+        "video": {}
+      }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+  },
+  "analytics": {},
+  "cta": {
+    "link": "swiggy://menu?restaurant_id=423638",
+    "text": "RESTAURANT_MENU",
+    "type": "DEEPLINK"
+  },
+  "widgetId": "collectionV5RestaurantListWidget"
+}
